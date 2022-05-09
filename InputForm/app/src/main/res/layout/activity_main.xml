@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MSSV*: " />
+
+            <TextView
+                    android:id="@+id/alert_student_id"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Nhập thông tin)"
+                    android:textColor="#f54242"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/student_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ tên*: " />
+
+            <TextView
+                    android:id="@+id/alert_name"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Nhập thông tin)"
+                    android:textColor="#f54242"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số CCCD*: " />
+
+            <TextView
+                    android:id="@+id/alert_id"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Nhập thông tin)"
+                    android:textColor="#f54242"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/id"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại*: " />
+
+            <TextView
+                    android:id="@+id/alert_phone"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Nhập thông tin)"
+                    android:textColor="#f54242"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ email*: " />
+
+            <TextView
+                    android:id="@+id/alert_email"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Nhập thông tin)"
+                    android:textColor="#f54242"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh:" />
+
+        <TextView
+                android:id="@+id/dob"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quê quán:" />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nơi ở hiện tại:" />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngành học:" />
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp">
+
+            <RadioButton
+                    android:id="@+id/KHMT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Khoa học máy tính" />
+
+            <RadioButton
+                    android:id="@+id/KTMT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kỹ thuật máy tính" />
+
+        </RadioGroup>
+
+        <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngôn ngữ lập trình:" />
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp">
+
+            <CheckBox
+                    android:id="@+id/C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+            <CheckBox
+                    android:id="@+id/Java"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Java" />
+
+            <CheckBox
+                    android:id="@+id/Python"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Python" />
+
+            <CheckBox
+                    android:id="@+id/Javascript"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Javascript" />
+        </RadioGroup>
+
+        <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tôi đồng ý với các điều khoản"
+                android:textSize="20dp" />
+
+        <TextView
+                android:id="@+id/alert_checkbox"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác nhận đồng ý với các điều khoản"
+                android:textColor="#f54242"
+                android:visibility="gone" />
+
+        <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit form" />
+
+    </LinearLayout>
+</ScrollView>
