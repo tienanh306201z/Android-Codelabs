@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#E0E8EB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:id="@+id/currency_1"
+                                                     android:padding="8dp"
+                                                     android:textSize="20sp"
+                                                     android:text="$"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:id="@+id/cash_1"
+                                                     android:layout_weight="1"
+                                                     android:layout_height="wrap_content"
+                                                     android:textSize="30sp"
+                                                     android:textStyle="bold"
+                                                     android:textColor="@color/black"
+                                                     android:text="0"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Spinner
+            android:id="@+id/spinner1"
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:id="@+id/currency_2"
+                                                     android:layout_height="wrap_content"
+                                                     android:padding="8dp"
+                                                     android:textSize="20sp"
+                                                     android:text="đ"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:id="@+id/cash_2"
+                                                     android:layout_weight="1"
+                                                     android:layout_height="wrap_content"
+                                                     android:textSize="30sp"
+                                                     android:textStyle="bold"
+                                                     android:textColor="@color/black"
+                                                     android:text="0"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Spinner
+            android:id="@+id/spinner2"
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                 android:id="@+id/exchange_value"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginHorizontal="8dp"
+                                                 android:textSize="15sp"
+                                                 android:textColor="@color/black"
+                                                 android:text="1 USD = 23,185.00 VND"/>
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginHorizontal="8dp"
+                                                 android:textSize="15sp"
+                                                 android:textColor="@color/black"
+                                                 android:text="Updated 5/21/2022 5:24 PM"/>
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginHorizontal="8dp"
+                                                 android:layout_marginVertical="10dp"
+                                                 android:textStyle="bold"
+                                                 android:textSize="15sp"
+                                                 android:textColor="@color/black"
+                                                 android:text="@string/update_rates"/>
+
+    <Space android:layout_weight="1" android:layout_height="0dp" android:layout_width="match_parent"/>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Space android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/button_CE" android:layout_weight="1"
+                                                       android:layout_width="0dp"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="CE"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_clear"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="x"/>
+            android:id="@+id/button_clear"
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="60dp">
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_7"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="7"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_8"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="8"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_9"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="9"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="60dp">
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_4"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="4"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_5"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="5"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_6"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="6"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="60dp">
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_1"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="1"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_2"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="2"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_3"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="3"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="60dp">
+            <Space android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_0"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="0"/>
+            <androidx.appcompat.widget.AppCompatButton android:layout_weight="1" android:layout_width="0dp"
+                                                       android:id="@+id/button_dot"
+                                                       android:backgroundTint="@color/white"
+                                                       android:elevation="0dp"
+                                                       android:layout_height="60dp" android:text="."/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

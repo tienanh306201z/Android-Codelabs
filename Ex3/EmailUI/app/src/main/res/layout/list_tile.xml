@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/list_tile_id"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="horizontal">
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_text"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/white"
+            android:text="E"
+            android:textSize="22sp"
+            android:elevation="0dp"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            app:elevation="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="75dp"
+    />
+    <Space android:layout_width="10dp" android:layout_height="0dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="0dp" android:layout_height="wrap_content"
+                                                  android:layout_weight="1" android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_weight="1"
+                                                      android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView android:layout_width="0dp"
+                                                         android:id="@+id/title"
+                                                         android:textSize="16sp"
+                                                         android:textStyle="bold"
+                                                         android:layout_height="wrap_content"
+                                                         android:layout_weight="1"
+                                                         android:text="Edurila.com"/>
+            <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                         android:layout_height="wrap_content"
+                                                         android:textSize="12sp"
+                                                         android:id="@+id/time_view"
+                                                         android:text="12:34 PM"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:orientation="horizontal">
+            <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="0dp"
+                                                          android:layout_height="wrap_content"
+                                                          android:layout_weight="1"
+                                                          android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:id="@+id/description_1"
+                                                             android:text="$19 On;y (First 10 spots) - Bestselling..."/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                             android:layout_height="wrap_content"
+                                                             android:id="@+id/description_2"
+                                                             android:text="Are you looking to Learn Web Designin..."/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Space android:layout_width="10dp" android:layout_height="0dp"/>
+
+            <ImageButton android:layout_width="40dp" android:layout_height="40dp"
+                         android:scaleType="centerCrop"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/star_icon"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
