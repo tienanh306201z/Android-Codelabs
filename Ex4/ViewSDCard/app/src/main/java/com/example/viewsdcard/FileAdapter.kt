@@ -80,7 +80,7 @@ class FileAdapter(private val context: Context, private val filesAndFolders: Arr
             }
         }
 
-        holder.itemView.setOnLongClickListener { view ->
+        holder.edit.setOnClickListener { view ->
             val popupMenu = PopupMenu(context, view)
             popupMenu.menu.add("DELETE")
             popupMenu.menu.add("MOVE")
