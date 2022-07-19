@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/student_id_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MSSV" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/student_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/student_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/student_date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birth Date" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update" />
+</LinearLayout>
