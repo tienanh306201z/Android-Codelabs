@@ -2,9 +2,12 @@ package com.alva.studentmanager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.alva.studentmanager.data.getMockData
 import com.alva.studentmanager.models.Student
 
@@ -32,15 +35,32 @@ class EditActivity : AppCompatActivity() {
             if (!studentIdEditText.text.equals("") && !studentNameEditText.text.equals("")
                 && !studentEmailEditText.text.equals("") && !studentDateEditText.text.equals("")
             ) {
-                val student = Student(
-                    id = 1,
-                    studentID = studentIdEditText.text.toString().toInt(),
-                    name = studentNameEditText.text.toString(),
-                    email = studentEmailEditText.text.toString(),
-                    birthDate = studentDateEditText.text.toString()
-                )
-                getMockData.add(student)
-                finish()
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("This is alertDialog")
+                builder.setMessage("Do you wanna update this student profile?")
+                builder.setIcon(android.R.drawable.ic_dialog_alert)
+
+                //performing positive action
+                builder.setPositiveButton("Yes") { dialogInterface, which ->
+                    val student = Student(
+                        id = 1,
+                        studentID = studentIdEditText.text.toString().toInt(),
+                        name = studentNameEditText.text.toString(),
+                        email = studentEmailEditText.text.toString(),
+                        birthDate = studentDateEditText.text.toString()
+                    )
+                    getMockData.add(student)
+                    Log.d("Hello", getMockData.size.toString())
+                    finish()
+                }
+
+                builder.setNegativeButton("No") { dialogInterface, which ->
+
+                }
+                val alertDialog: AlertDialog = builder.create()
+
+                alertDialog.setCancelable(false)
+                alertDialog.show()
             }
         }
     }

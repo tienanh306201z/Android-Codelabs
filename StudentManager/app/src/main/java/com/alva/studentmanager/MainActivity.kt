@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.alva.studentmanager.adapters.StudentAdapter
 import com.alva.studentmanager.data.getMockData
-import com.alva.studentmanager.helpers.DBHelper
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycler_view)
         textView = findViewById(R.id.alert_text_view)
 
-        val db = DBHelper(this, null)
-
         if (getMockData.isEmpty()) {
             textView.visibility = View.VISIBLE
             return
@@ -38,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         llm.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = llm
         recyclerView.setHasFixedSize(true)
-        val adapter = StudentAdapter(applicationContext, getMockData.toTypedArray())
+        val adapter = StudentAdapter(applicationContext, getMockData)
         recyclerView.adapter = adapter
     }
 

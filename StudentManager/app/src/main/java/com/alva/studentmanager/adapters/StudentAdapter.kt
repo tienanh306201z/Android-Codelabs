@@ -13,7 +13,7 @@ import com.alva.studentmanager.EditActivity
 import com.alva.studentmanager.R
 import com.alva.studentmanager.models.Student
 
-class StudentAdapter(private val context: Context, private val list: Array<Student>) :
+class StudentAdapter(private val context: Context, private val list: MutableList<Student>) :
     RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
